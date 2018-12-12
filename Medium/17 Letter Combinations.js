@@ -28,8 +28,7 @@ var letterCombinations = function(digits)
     let set1 = letterCombinations(digits.substr(0,1));
     let set2 = letterCombinations(digits.substr(1));
     
-    for(i= 0; i<set1.length; i++)
-        {
+    for(i= 0; i<set1.length; i++) {
             for(j=0; j<set2.length; j++)
                 {
                     result.push(set1[i]+set2[j]);
